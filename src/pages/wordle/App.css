@@ -1,0 +1,105 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Allerta Stencil", Sans-serif;
+  background-color: #0B1623;
+  color: #F5F8FF;
+}
+
+header {
+  border-bottom: #F5F8FF;
+  
+}
+
+header h1 {
+  text-align: center;
+}
+
+.letter {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #3A3A3C;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  display: grid;
+  place-items: center;
+}
+
+#wordle-grid {
+  padding-left: 215px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 8px;
+}
+
+#game {
+  height: 70vh;
+  display: grid;
+  place-items: center
+}
+
+.correct {
+  background-color: #538D4E;
+}
+
+.misplaced {
+  background-color: #B59F3B;
+}
+
+.incorrect {
+  background-color: #3A3A3C;
+}
+
+.light-mode {
+  background-color: #F5F8FF; /* Background color */
+  color: #0B1623; /* Text color */
+}
+
+.light-mode .incorrect {
+  color: #FF4D4D; /* Wrong letter color */
+}
+
+.light-mode .misplaced {
+  color: #FFCC00; /* Misplaced letter color */
+}
+
+.light-mode .correct {
+  color: #00CC66; /* Correct letter color */
+}

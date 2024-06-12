@@ -1,0 +1,90 @@
+
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.welcome-screen {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.welcome-screen p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.welcome-screen h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.welcome-screen button {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.welcome-screen button:hover {
+  background-color: #0056b3;
+}
+
+.square {
+  background-color: #e7e7e752;
+  border: 1px solid #ffffff;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.status {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.game-info ol {
+  padding-left: 20px;
+}
+
+.game {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+.game-board {
+  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 375px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.moveHistory{
+  list-style-type: none;
+  
+}
+
+
